@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/kominfo.png" />
+    <title>Status Pengajuan Magang</title>
+    <!-- PLUGINS CSS STYLE -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css" />
+    <link rel="stylesheet" href="plugins/slick/slick.css" />
+    <link rel="stylesheet" href="plugins/slick/slick-theme.css" />
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="plugins/aos/aos.css" />
+    <!-- CUSTOM CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .status {
+        margin-top: 20px;
+      }
+
+      .status p {
+        margin: 10px 0;
+      }
+
+      .keterangan {
+        margin-top: 30px;
+      }
+
+      .keterangan p {
+        margin-bottom: 10px;
+      }
+
+      .status-lulus {
+        color: green;
+      }
+
+      .status-tidak-lulus {
+        color: red;
+      }
+
+      .riwayat {
+        margin-top: 30px;
+      }
+
+      .riwayat-item {
+        border-left: 3px solid #ccc;
+        padding-left: 10px;
+        margin-bottom: 20px;
+      }
+
+      .riwayat-item p {
+        margin: 5px 0;
+      }
+
+      .riwayat-item .tahapan {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/logo2.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="ti-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item @@home">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown @@pages">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-toggle="dropdown"
+                >Info Bidang
+                <span><i class="ti-angle-down"></i></span>
+              </a>
+              <!-- Dropdown list -->
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item @@home1" href="egov.html"
+                    >E-Goverment</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sandi.html"
+                    >Persandian dan keamanan informasi</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item @@home3" href="tik.html"
+                    >Teknologi Informasi dan Komunikasi</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item @@home3" href="ikp.html"
+                    >Informasi dan Komunikasi Publik</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item @@career">
+              <a class="nav-link" href="info.html">Info Magang</a>
+            </li>
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+            <li class="nav-item @@contact active">
+              <a class="nav-link" href="#">Status Pengajuan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sign-in.html">Log-Out</a>
+            </li>
+            <li class="nav-item">
+              <a href="magang.html" class="btn btn-main-md">Daftar Magang</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="section page-title">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 m-auto">
+            <!-- Page Title -->
+            <h1>Informasi Pengajuan Magang</h1>
+            <!-- Page Description -->
+            <p>
+              Temukan informasi terbaru tentang status pengajuan magang Anda di
+              Dinas Komunikasi dan Informatika Kota Palembang. Dapatkan
+              pembaruan tentang apakah pengajuan Anda telah diterima atau masih
+              dalam tahap validasi data. Pantau riwayat pengajuan untuk
+              mengetahui perkembangan terbaru.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq section pt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 m-auto">
+            <div class="block shadow">
+              <!-- Getting Started -->
+              <div class="faq-item">
+                <!-- Title -->
+                <div class="faq-item-title">
+                  <h2>Status Pengajuan Magang</h2>
+                </div>
+                <div class="status">
+                  <p>Status: <strong class="status-lulus">Lulus</strong></p>
+                  <p>Tanggal Pengumuman: 15 April 2024</p>
+                  <p>Bidang Magang: Teknologi Informasi dan Komunikasi</p>
+                </div>
+                <div class="keterangan">
+                  <h3>Keterangan:</h3>
+                  <p>
+                    Selamat! Pengajuan magang Anda untuk bidang Teknologi
+                    Informasi dan Komunikasi telah diterima oleh Dinas
+                    Komunikasi dan Informatika Kota Palembang. Anda dapat segera
+                    mempersiapkan diri untuk memulai magang pada tanggal yang
+                    telah ditentukan.
+                  </p>
+                </div>
+                <div class="riwayat">
+                  <h3>Riwayat Pengajuan:</h3>
+                  <div class="riwayat-item">
+                    <p class="tahapan">Tahap Pengajuan</p>
+                    <p>Tanggal: 5 April 2024</p>
+                    <p>Status: Sedang diproses</p>
+                  </div>
+                  <div class="riwayat-item">
+                    <p class="tahapan">Tahap Validasi Data</p>
+                    <p>Tanggal: 10 April 2024</p>
+                    <p>Status: Validasi berhasil</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--============================
+=            Footer            =
+=============================-->
+    <footer>
+      <div class="text-center bg-blue py-4">
+        <small class="text-white">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a
+                href="https://www.instagram.com/kominfopalembang/"
+                class="btn btn-rounded-icon"
+              >
+                <i class="ti-instagram"></i> Instagram
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://www.youtube.com/@diskominfopalembang"
+                class="btn btn-rounded-icon"
+              >
+                <i class="ti-youtube"></i> Youtube
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="mailto:kominfo@palembang.go.id"
+                class="btn btn-rounded-icon"
+              >
+                <i class="ti-email"></i> Email
+              </a>
+            </li>
+          </ul>
+          ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          . Designed by Diskominfo Kota Palembang
+
+          <br />
+        </small>
+      </div>
+    </footer>
+
+    <!-- To Top -->
+    <div class="scroll-top-to">
+      <i class="ti-angle-up"></i>
+    </div>
+
+    <!-- JAVASCRIPTS -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

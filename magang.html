@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8" />
+    <title>Magang Dinas Kominfo Kota Palembang</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/kominfo.png" />
+
+    <!-- PLUGINS CSS STYLE -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css" />
+    <link rel="stylesheet" href="plugins/slick/slick.css" />
+    <link rel="stylesheet" href="plugins/slick/slick-theme.css" />
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="plugins/aos/aos.css" />
+
+    <!-- CUSTOM CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+    <nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/logo2.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="ti-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item @@home">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown @@pages">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-toggle="dropdown"
+                >Info Bidang
+                <span><i class="ti-angle-down"></i></span>
+              </a>
+              <!-- Dropdown list -->
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item @@home1" href="egov.html"
+                    >E-Goverment</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sandi.html"
+                    >Persandian dan keamanan informasi</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item @@home3" href="tik.html"
+                    >Teknologi Informasi dan Komunikasi</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item @@home3" href="ikp.html"
+                    >Informasi dan Komunikasi Publik</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item @@career">
+              <a class="nav-link" href="info.html">Info Magang</a>
+            </li>
+
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+            <li class="nav-item @@contact active">
+              <a class="nav-link" href="#">Daftar Magang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sign-in.html">Log-Out</a>
+            </li>
+            <li class="nav-item">
+              <a href="status.html" class="btn btn-main-md">Status Pengajuan</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--================================
+=            Page Title            =
+=================================-->
+
+    <section class="section page-title">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 m-auto">
+            <!-- Page Title -->
+            <h1>Magang Dinas Komunikasi dan Informatika Kota Palembang</h1>
+            <!-- Page Description -->
+            <p>
+              Daftarkan dirimu sekarang juga untuk menambah pengalaman magangmu
+              di Dinas Komunikasi dan Informatika Kota Palembang.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--====  End of Page Title  ====-->
+
+    <!--====================================
+=            Privacy Policy            =
+=====================================-->
+    <section class="privacy section pt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <nav class="privacy-nav">
+              <ol>
+                <li>
+                  Setelah Login, peserta dapat mendaftar magang pada program
+                  yang tersedia.
+                </li>
+                <li>
+                  Setelah itu pilih durasi magang yang sesuai dengan ketentuan
+                  Sekolah/Perguruan Tinggi masing-masing
+                </li>
+                <li>
+                  Selesai Mendaftar, pendaftar harap menunggu konfirmasi dari
+                  pihak Diskominfo Kota Palembang
+                </li>
+                <li>
+                  Pendaftar dapat melihat status lamaran nya pada halaman status
+                  secara rutin agar tidak ketinggalan info
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-lg-9">
+            <div class="block">
+              <div class="container">
+                <!-- Application Title -->
+                <div class="form-title text-center">
+                  <h3>Pengajuan Magang</h3>
+                </div>
+                <!-- Application Form -->
+                <form
+                  id="internshipForm"
+                  action=""
+                  method="POST"
+                  enctype="multipart/form-data"
+                >
+                  <div class="row">
+                    <div class="col-md-12">
+                      <!-- Nama Mahasiswa -->
+                      <input
+                        class="form-control main"
+                        type="text"
+                        placeholder="Nama Mahasiswa"
+                        name="nama_mahasiswa"
+                        required
+                      />
+                      <input
+                        class="form-control main"
+                        type="text"
+                        placeholder="NIM Mahasiswa"
+                        name="nim_mahasiswa"
+                        required
+                      />
+                      <!-- Periode Magang -->
+                      <input
+                        class="form-control main"
+                        type="text"
+                        placeholder="Periode Magang"
+                        name="periode_magang"
+                        required
+                      />
+                      <!-- Pilihan Bidang Magang 1 -->
+                      <select
+                        class="form-control main"
+                        name="bidang_magang1"
+                        required
+                      >
+                        <option value="">Pilih Bidang Magang 1</option>
+                        <option value="Bidang 1">E-Goverment</option>
+                        <option value="Bidang 2">
+                          Persandian dan Keamanan Informasi
+                        </option>
+                        <option value="Bidang 3">
+                          Teknologi Informasi dan Komunikasi
+                        </option>
+                        <option value="Bidang 4">
+                          Informasi dan Komunikasi Publik
+                        </option>
+                      </select>
+                      <!-- Pilihan Bidang Magang 2 -->
+                      <select
+                        class="form-control main"
+                        name="bidang_magang2"
+                        required
+                      >
+                        <option value="">Pilih Bidang Magang 2</option>
+                        <option value="Bidang 1">E-Goverment</option>
+                        <option value="Bidang 2">
+                          Persandian dan Keamanan Informasi
+                        </option>
+                        <option value="Bidang 3">
+                          Teknologi Informasi dan Komunikasi
+                        </option>
+                        <option value="Bidang 4">
+                          Informasi dan Komunikasi Publik
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="tanggal_mulai_magang">Mulai Magang:</label>
+                        <!-- Tanggal Mulai Magang -->
+                        <input
+                          class="form-control main"
+                          type="date"
+                          name="tanggal_mulai_magang"
+                          id="tanggal_mulai_magang"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="tanggal_selesai_magang"
+                          >Selesai Magang:</label
+                        >
+                        <!-- Tanggal Selesai Magang -->
+                        <input
+                          class="form-control main"
+                          type="date"
+                          name="tanggal_selesai_magang"
+                          id="tanggal_selesai_magang"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <!-- Unggah Surat Pengantar -->
+                      <div class="form-group">
+                        <label for="surat_pengantar"
+                          >Unggah Surat Pengantar (format: .pdf)</label
+                        >
+                        <input
+                          class="form-control main"
+                          type="file"
+                          name="surat_pengantar"
+                          id="surat_pengantar"
+                          accept=".pdf"
+                          required
+                        />
+                      </div>
+                      <!-- Unggah Proposal Magang -->
+                      <div class="form-group">
+                        <label for="proposal_magang"
+                          >Unggah Proposal Magang (format: .pdf)</label
+                        >
+                        <input
+                          class="form-control main"
+                          type="file"
+                          name="proposal_magang"
+                          id="proposal_magang"
+                          accept=".pdf"
+                          required
+                        />
+                      </div>
+                      <!-- Unggah Transkip Nilai -->
+                      <div class="form-group">
+                        <label for="transkip_nilai"
+                          >Unggah Transkip Nilai (format: .pdf)</label
+                        >
+                        <input
+                          class="form-control main"
+                          type="file"
+                          name="transkip_nilai"
+                          id="transkip_nilai"
+                          accept=".pdf"
+                          required
+                        />
+                      </div>
+                      <!-- Unggah Pas Foto -->
+                      <div class="form-group">
+                        <label for="pas_foto">Unggah Pas Foto</label>
+                        <input
+                          class="form-control main"
+                          type="file"
+                          name="pas_foto"
+                          id="pas_foto"
+                          accept="image/*"
+                          required
+                        />
+                      </div>
+                      <!-- Submit Button -->
+                      <div class="col-12 text-right">
+                        <button type="submit" class="btn btn-main-md">
+                          Kirim
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="successModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="successModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="successModalLabel">
+                    Pengajuan Berhasil
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Pengajuan Anda telah berhasil dikirim.
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Tutup
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====  End of Privacy Policy  ====-->
+    <!--============================
+=            Footer            =
+=============================-->
+    <footer>
+      <div class="text-center bg-blue py-4">
+        <small class="text-white">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a
+                href="https://www.instagram.com/kominfopalembang/"
+                class="btn btn-rounded-icon"
+              >
+                <i class="ti-instagram"></i> Instagram
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://www.youtube.com/@diskominfopalembang"
+                class="btn btn-rounded-icon"
+              >
+                <i class="ti-youtube"></i> Youtube
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="mailto:kominfo@palembang.go.id"
+                class="btn btn-rounded-icon"
+              >
+                <i class="ti-email"></i> Email
+              </a>
+            </li>
+          </ul>
+          ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          . Designed by Diskominfo Kota Palembang
+
+          <br />
+        </small>
+      </div>
+    </footer>
+    <!-- To Top -->
+    <div class="scroll-top-to">
+      <i class="ti-angle-up"></i>
+    </div>
+
+    <!-- JAVASCRIPTS -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#internshipForm").on("submit", function (event) {
+          event.preventDefault();
+          // Simulate form submission success
+          $("#successModal").modal("show");
+        });
+      });
+    </script>
+  </body>
+</html>
